@@ -1,10 +1,10 @@
 list1, list2 = [], []
 
 with open('data/01', 'r') as f:
-    while l := f.readline():
-        n1, n2 = l.split()
-        list1.append(int(n1))
-        list2.append(int(n2))
+    while line := f.readline():
+        num1, num2 = line.split()
+        list1.append(int(num1))
+        list2.append(int(num2))
 
 list1.sort(), list2.sort()
 difference, similarity = 0, 0
